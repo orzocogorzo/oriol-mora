@@ -1,0 +1,8 @@
+alignfull
+alignwide
+alignnone
+aligncenter
+alignright
+flex-nowrap
+xl:flex
+xl:hidden

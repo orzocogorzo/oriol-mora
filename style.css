@@ -1,0 +1,15 @@
+/**
+ * Theme Name:     Oriol Mora
+ * Theme URI:      https://github.com/orzocogorzo/oriolmora
+ * Description:    Child theme del tema twentytwentyfive per a la web de l'Oriol Mora
+ * Template:       twentytwentyfive
+ * Author:         Lucas García
+ * Author URI:     https://github.com/orzocogorzo/
+ * Version:        1.0.0
+ * License:        GNU General Public License v2 or later
+ * License URI:    http://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain:    oriol-mora
+ * Domain Path:    /languages
+ */
+
+@import "assets/css/theme.bundle.css";

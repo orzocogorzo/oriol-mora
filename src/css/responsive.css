@@ -1,0 +1,9 @@
+@media (max-width: 782px) {
+  .has-global-padding {
+    padding: var(--wp--style--root--padding-right) !important;
+  }
+
+  .has-global-padding > .alignfull {
+    margin-left: calc(var(--wp--style--root--padding-right) * -1) !important;
+  }
+}

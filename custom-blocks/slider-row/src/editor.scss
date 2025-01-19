@@ -1,0 +1,12 @@
+.wpct-block-slider-row {
+  flex-wrap: wrap !important;
+
+  .wpct-block-slider-row-step {
+    /* flex-grow: 0; */
+    /* flex-shrink: 0; */
+
+    figure::after {
+      display: none;
+    }
+  }
+}

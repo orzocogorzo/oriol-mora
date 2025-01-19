@@ -1,0 +1,12 @@
+node_modules
+
+# local config
+.idea
+.vscode
+.nvimrc
+.wp-env.json
+.php-cs-fixer.cache
+
+# build
+theme.bundle.*
+editor-style.css

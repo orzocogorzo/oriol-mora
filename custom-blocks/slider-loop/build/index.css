@@ -1,0 +1,22 @@
+.wpct-block-slider-loop {
+  flex-wrap: wrap !important;
+}
+.wpct-block-slider-loop.slides-to-show-1 .wpct-block-slider-slide {
+  flex-basis: 100%;
+}
+.wpct-block-slider-loop.slides-to-show-2 .wpct-block-slider-slide {
+  flex-basis: 50%;
+}
+.wpct-block-slider-loop.slides-to-show-3 .wpct-block-slider-slide {
+  flex-basis: 33.33%;
+}
+.wpct-block-slider-loop.slides-to-show-4 .wpct-block-slider-slide {
+  flex-basis: 25%;
+}
+.wpct-block-slider-loop.slides-to-show-5 .wpct-block-slider-slide {
+  flex-basis: 20%;
+}
+.wpct-block-slider-loop .wpct-block-slider-slide {
+  flex-grow: 0;
+  flex-shrink: 0;
+}

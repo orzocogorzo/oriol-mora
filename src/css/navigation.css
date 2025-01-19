@@ -1,0 +1,4 @@
+.wp-block-page-list .menu-item-home > button,
+.wp-block-page-list .menu-item-home > .wp-block-navigation__submenu-container {
+  display: none;
+}

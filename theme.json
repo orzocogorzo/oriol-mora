@@ -1,0 +1,149 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "typography": {
+      "writingMode": false,
+      "fluid": false,
+      "fontSizes": [
+        {
+          "fluid": false,
+          "name": "Small",
+          "size": "0.875rem",
+          "slug": "small"
+        },
+        {
+          "name": "Medium",
+          "size": "1.1rem",
+          "slug": "medium"
+        },
+        {
+          "name": "Large",
+          "size": "1.38rem",
+          "slug": "large"
+        },
+        {
+          "name": "Extra Large",
+          "size": "1.75rem",
+          "slug": "x-large"
+        },
+        {
+          "name": "Extra Extra Large",
+          "size": "2.15rem",
+          "slug": "xx-large"
+        }
+      ]
+    },
+    "color": {
+      "palette": [
+        {
+          "color": "#FFFFFF",
+          "name": "Base",
+          "slug": "base"
+        },
+        {
+          "color": "#111111",
+          "name": "Contrast",
+          "slug": "contrast"
+        },
+        {
+          "color": "#68497D",
+          "name": "Accent",
+          "slug": "accent"
+        }
+      ]
+    },
+    "spacing": {
+      "defaultSpacingSizes": false,
+      "spacingSizes": [
+        {
+          "name": "Tiny",
+          "size": "10px",
+          "slug": "20"
+        },
+        {
+          "name": "X-Small",
+          "size": "20px",
+          "slug": "30"
+        },
+        {
+          "name": "Small",
+          "size": "30px",
+          "slug": "40"
+        },
+        {
+          "name": "Regular",
+          "size": "clamp(30px, 5vw, 50px)",
+          "slug": "50"
+        },
+        {
+          "name": "Large",
+          "size": "clamp(30px, 7vw, 70px)",
+          "slug": "60"
+        },
+        {
+          "name": "X-Large",
+          "size": "clamp(50px, 7vw, 90px)",
+          "slug": "70"
+        },
+        {
+          "name": "XX-Large",
+          "size": "clamp(70px, 10vw, 140px)",
+          "slug": "80"
+        },
+        {
+          "name": "XXX-Large",
+          "size": "clamp(120px, 12vw, 200px)",
+          "slug": "90"
+        }
+      ],
+      "units": ["%", "px", "em", "rem", "vh", "vw"]
+    },
+    "layout": {
+      "contentSize": "65rem",
+      "wideSize": "75rem"
+    }
+  },
+  "styles": {
+    "spacing": {
+      "padding": {
+        "top": "var(--wp--preset--spacing--50)",
+        "right": "var(--wp--preset--spacing--40)",
+        "bottom": "var(--wp--preset--spacing--50)",
+        "left": "var(--wp--preset--spacing--40)"
+      }
+    },
+    "typography": {
+      "fontSize": "var:preset|font-size|medium"
+    }
+  },
+  "templateParts": [
+    {
+      "area": "header",
+      "name": "header-ca",
+      "title": "Capçalera"
+    },
+    {
+      "area": "header",
+      "name": "header-es",
+      "title": "Cabecera"
+    }
+  ],
+  "customTemplates": [
+    {
+      "name": "page-ca",
+      "title": "Pàgines",
+      "postTypes": ["page"]
+    },
+    {
+      "name": "page-es",
+      "title": "Páginas",
+      "postTypes": ["page"]
+    },
+    {
+      "name": "single-work",
+      "title": "Obras",
+      "postTypes": ["work"]
+    }
+  ]
+}

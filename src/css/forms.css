@@ -1,0 +1,34 @@
+.wpcf7 label {
+  display: none;
+}
+
+.wpcf7-form-control-wrap {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+}
+
+.wpcf7-form-control {
+  width: 100%;
+  background-color: transparent;
+}
+
+.wpcf7-form-control:focus {
+  box-shadow: unset;
+  border-color: var(--wp--preset--color--contrast);
+}
+
+.wpcf7-form-control.wpcf7-submit {
+  width: 240px;
+  border: 1px solid var(--wp--preset--color--contrast);
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  transition:
+    color 200ms ease,
+    background-color 200ms ease;
+}
+
+.wpcf7-form-control.wpcf7-submit:hover {
+  color: var(--wp--preset--color--base);
+  background-color: var(--wp--preset--color--accent);
+}

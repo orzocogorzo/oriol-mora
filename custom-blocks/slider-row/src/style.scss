@@ -1,0 +1,111 @@
+.wpct-block-slider-row {
+  margin: auto;
+
+  &:not(.ready) + * {
+    visibility: hidden;
+  }
+
+  @media (max-width: 782px) {
+    &:not(.block-editor-block-list__block) {
+      display: block !important;
+    }
+  }
+
+  @media (min-width: 782px) {
+    display: flex !important;
+    gap: var(--wp--preset--spacing--10) !important;
+
+    .wpct-block-slider-row-step {
+      flex-basis: 0;
+      flex-shrink: 1;
+      flex-grow: 1;
+    }
+  }
+
+  .wpct-block-slider-row-step {
+    @media (min-width: 782px) {
+      padding: 65px 60px 30px 60px;
+    }
+    @media (max-width: 782px) {
+      padding: 65px 32px 30px;
+    }
+  }
+
+  ul.slick-dots {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+
+    > li {
+      margin: 0;
+    }
+
+    > li:nth-child(n + 2) {
+      margin-left: 5px;
+    }
+
+    .slick-active button {
+      opacity: 1;
+    }
+    button {
+      width: 10px;
+      height: 10px;
+      padding: 0;
+      border-radius: 50%;
+      font-size: 0px;
+      background-color: var(--wp--preset--color--black);
+      border: none;
+      cursor: pointer;
+      opacity: 0.3;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  .wpct-block-slider-row-arrows {
+    width: fit-content;
+    margin: 1rem auto;
+    display: flex;
+    gap: 2rem;
+
+    .slick-arrow {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      position: relative;
+      border: none;
+      outline: none;
+      color: var(--wp--preset--color--typography);
+      font-size: 0px;
+      margin: 0 1rem;
+      background-color: transparent;
+      border: 2px solid var(--wp--preset--color--typography);
+      transform: unset;
+
+      &::after {
+        content: "";
+        position: absolute;
+        height: 16px;
+        width: 16px;
+        border-top: 3px solid var(--wp--preset--color--typography);
+        border-right: 3px solid var(--wp--preset--color--typography);
+        transform: rotate(45deg);
+        top: 10px;
+        left: 7px;
+        display: block;
+      }
+
+      &.slick-prev {
+        transform: rotate(180deg);
+      }
+
+      &.slick-disabled {
+        opacity: 0.4;
+        cursor: default;
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.wpct-block-slider-row {
+  margin: auto;
+}
+.wpct-block-slider-row:not(.ready) + * {
+  visibility: hidden;
+}
+@media (max-width: 782px) {
+  .wpct-block-slider-row:not(.block-editor-block-list__block) {
+    display: block !important;
+  }
+}
+@media (min-width: 782px) {
+  .wpct-block-slider-row {
+    display: flex !important;
+    gap: var(--wp--preset--spacing--10) !important;
+  }
+  .wpct-block-slider-row .wpct-block-slider-row-step {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 65px 60px 30px;
+  }
+}
+@media (max-width: 782px) {
+  .wpct-block-slider-row .wpct-block-slider-row-step {
+    padding: 65px 32px 30px;
+  }
+}
+.wpct-block-slider-row ul.slick-dots {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.wpct-block-slider-row ul.slick-dots > li {
+  margin: 0;
+}
+.wpct-block-slider-row ul.slick-dots > li:nth-child(n + 2) {
+  margin-left: 5px;
+}
+.wpct-block-slider-row ul.slick-dots .slick-active button {
+  opacity: 1;
+}
+.wpct-block-slider-row ul.slick-dots button {
+  background-color: var(--wp--preset--color--black);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0;
+  height: 10px;
+  opacity: 0.3;
+  padding: 0;
+  width: 10px;
+}
+.wpct-block-slider-row ul.slick-dots button:before {
+  display: none;
+}
+.wpct-block-slider-row .wpct-block-slider-row-arrows {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.wpct-block-slider-row .wpct-block-slider-row-arrows .slick-arrow {
+  background-color: transparent;
+  border: none;
+  border: 2px solid var(--wp--preset--color--typography);
+  border-radius: 50%;
+  color: var(--wp--preset--color--typography);
+  cursor: pointer;
+  font-size: 0;
+  height: 40px;
+  margin: 0 1rem;
+  outline: none;
+  position: relative;
+  transform: unset;
+  width: 40px;
+}
+.wpct-block-slider-row .wpct-block-slider-row-arrows .slick-arrow:after {
+  border-right: 3px solid var(--wp--preset--color--typography);
+  border-top: 3px solid var(--wp--preset--color--typography);
+  content: "";
+  display: block;
+  height: 16px;
+  left: 7px;
+  position: absolute;
+  top: 10px;
+  transform: rotate(45deg);
+  width: 16px;
+}
+.wpct-block-slider-row .wpct-block-slider-row-arrows .slick-arrow.slick-prev {
+  transform: rotate(180deg);
+}
+.wpct-block-slider-row
+  .wpct-block-slider-row-arrows
+  .slick-arrow.slick-disabled {
+  cursor: default;
+  opacity: 0.4;
+}

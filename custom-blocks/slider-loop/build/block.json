@@ -1,0 +1,113 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "wpct-block/slider-loop",
+  "version": "0.1.0",
+  "title": "Wpct Slider Loop",
+  "category": "widgets",
+  "description": "A slider query loop custom block.",
+  "attributes": {
+    "slidesToScroll": {
+      "type": "number",
+      "default": 1
+    },
+    "slidesToShow": {
+      "type": "number",
+      "default": 1
+    },
+    "initialSlide": {
+      "type": "number",
+      "default": 0
+    },
+    "infinite": {
+      "type": "boolean",
+      "default": true
+    },
+    "centerMode": {
+      "type": "boolean",
+      "default": false
+    },
+    "showDots": {
+      "type": "boolean",
+      "default": false
+    },
+    "showArrows": {
+      "type": "boolean",
+      "default": true
+    },
+    "autoPlay": {
+      "type": "boolean",
+      "default": false
+    },
+    "autoPlaySpeed": {
+      "type": "number",
+      "default": 5
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "align": ["wide", "full"],
+    "html": false,
+    "color": {
+      "gradients": true,
+      "link": true,
+      "heading": true,
+      "button": true,
+      "__experimentalDefaultControls": {
+        "background": true,
+        "text": true
+      }
+    },
+    "spacing": {
+      "margin": ["top", "bottom"],
+      "padding": true,
+      "__experimentalDefaultControls": {
+        "padding": true
+      }
+    },
+    "layout": {
+      "allowSwitching": false,
+      "allowInheriting": false,
+      "allowEditing": false,
+      "default": {
+        "type": "flex",
+        "flexWrap": "wrap"
+      }
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true,
+      "__experimentalDefaultControls": {
+        "color": true,
+        "radius": true,
+        "style": true,
+        "width": true
+      }
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true,
+      "__experimentalTextDecoration": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true
+      }
+    },
+    "interactivity": {
+      "clientNavigation": true
+    },
+    "shadow": true
+  },
+  "textdomain": "wpct",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "keywords": ["wpct", "slider", "carousel", "query", "loop"]
+}
