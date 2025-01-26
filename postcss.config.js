@@ -1,11 +1,7 @@
 module.exports = {
   plugins: {
-    "postcss-import": {},
-    "postcss-nested-ancestors": {},
-    "postcss-nested": {},
     "postcss-url": { url: "inline" },
-    "tailwindcss": {},
+    "@tailwindcss/postcss": {},
     "cssnano": { preset: "default" },
-    "autoprefixer": {},
   },
 };

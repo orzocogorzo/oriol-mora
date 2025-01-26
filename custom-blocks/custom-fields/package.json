@@ -1,0 +1,13 @@
+{
+  "name": "wpct-block/custom-fields",
+  "version": "1.0.0",
+  "description": "Custom fields custom block.",
+  "author": "codeccoop",
+  "license": "GPL-2.0-or-later",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "node esbuild/dev.cjs",
+    "build": "node esbuild/build.cjs"
+  }
+}

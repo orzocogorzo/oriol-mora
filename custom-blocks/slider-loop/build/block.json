@@ -2,11 +2,59 @@
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
   "name": "wpct-block/slider-loop",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "title": "Wpct Slider Loop",
   "category": "widgets",
   "description": "A slider query loop custom block.",
   "attributes": {
+    "adaptiveHeight": {
+      "type": "boolean",
+      "default": false
+    },
+    "arrows": {
+      "type": "boolean",
+      "default": true
+    },
+    "autoplay": {
+      "type": "boolean",
+      "default": false
+    },
+    "autoplaySpeed": {
+      "type": "number",
+      "default": 5
+    },
+    "centerMode": {
+      "type": "boolean",
+      "default": false
+    },
+    "customPaging": {
+      "type": "boolean",
+      "default": false
+    },
+    "dots": {
+      "type": "boolean",
+      "default": false
+    },
+    "fade": {
+      "type": "boolean",
+      "default": false
+    },
+    "infinite": {
+      "type": "boolean",
+      "default": true
+    },
+    "initialSlide": {
+      "type": "number",
+      "default": 0
+    },
+    "rtl": {
+      "type": "boolean",
+      "default": false
+    },
+    "slides": {
+      "type": "number",
+      "default": 5
+    },
     "slidesToScroll": {
       "type": "number",
       "default": 1
@@ -15,38 +63,18 @@
       "type": "number",
       "default": 1
     },
-    "initialSlide": {
-      "type": "number",
-      "default": 0
-    },
-    "infinite": {
+    "swipe": {
       "type": "boolean",
       "default": true
     },
-    "centerMode": {
+    "variableWidth": {
       "type": "boolean",
       "default": false
-    },
-    "showDots": {
-      "type": "boolean",
-      "default": false
-    },
-    "showArrows": {
-      "type": "boolean",
-      "default": true
-    },
-    "autoPlay": {
-      "type": "boolean",
-      "default": false
-    },
-    "autoPlaySpeed": {
-      "type": "number",
-      "default": 5
     }
   },
   "supports": {
     "anchor": true,
-    "align": ["wide", "full"],
+    "align": ["none", "wide", "full"],
     "html": false,
     "color": {
       "gradients": true,
@@ -67,11 +95,13 @@
     },
     "layout": {
       "allowSwitching": false,
-      "allowInheriting": false,
-      "allowEditing": false,
+      "allowInheriting": true,
+      "allowEditing": true,
+      "allowSizingOnChildren": true,
+      "allowJustification": true,
+      "allowCustomContentAndWideSize": true,
       "default": {
-        "type": "flex",
-        "flexWrap": "wrap"
+        "type": "constrained"
       }
     },
     "__experimentalBorder": {
@@ -104,10 +134,10 @@
     },
     "shadow": true
   },
-  "textdomain": "wpct",
+  "textdomain": "wp-coop-theme",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
-  "style": "file:./style-index.css",
+  "style": "file:./view.css",
   "viewScript": "file:./view.js",
   "keywords": ["wpct", "slider", "carousel", "query", "loop"]
 }

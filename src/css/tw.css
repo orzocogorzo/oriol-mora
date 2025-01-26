@@ -1,0 +1,27 @@
+@layer theme, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@plugin "@tailwindcss/forms";
+
+@theme {
+  /* Palette */
+  --color-base: #ffffff;
+  --color-contrast: #212121;
+  --color-accent-1: #009688;
+  --color-accent-2: #ffc107;
+  --color-accent-3: #6b0079;
+  --color-accent-4: #00796b;
+  --color-accent-5: #b2dfdb;
+  /* Typography */
+  --font-primary: Montserrat, sans-serif;
+  --font-secondary: "Montserrat Italic", serif;
+  --font-monospace: monospace;
+  /* Responsive */
+  --breakpoint-sm: 600px;
+  --breakpoint-md: 782px;
+  --breakpoint-lg: 1025px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1535px;
+}

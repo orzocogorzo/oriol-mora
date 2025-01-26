@@ -1,7 +1,10 @@
-@import "tailwindcss/base";
-@import "tailwindcss/utilities";
-@import "preflight.css";
+@import "./preflight.css";
 
+@import "./tw.css";
 @import "./navigation.css";
 @import "./forms.css";
 @import "./slider.css";
+@import "./full-page.css";
+@import "./home.css";
+@import "./artwork.css";
+@import "./image-viewer.css";

@@ -1,11 +1,15 @@
 <?php return [
     'dependencies' => [
         'react',
+        'react-jsx-runtime',
+        'wp-api',
+        'wp-api-fetch',
         'wp-block-editor',
         'wp-blocks',
         'wp-components',
+        'wp-data',
+        'wp-element',
         'wp-i18n',
-        'wp-primitives',
     ],
-    'version' => '3b55a4c96c4e89c24fc0',
+    'version' => 'b6a9152f4d8a9719f1ee5aad034a0f6926e2b519',
 ];

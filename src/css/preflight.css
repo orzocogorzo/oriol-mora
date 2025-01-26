@@ -294,3 +294,7 @@ video {
 [hidden] {
   display: none;
 }
+
+a:focus {
+  outline: none !important;
+}

@@ -1,12 +1,13 @@
 {
-  "name": "wpct-slider-block",
-  "version": "0.1.0",
-  "description": "A slider custom block",
-  "author": "Còdec",
+  "name": "wpct-block/slider-loop",
+  "version": "1.0.0",
+  "description": "A slider loop custom block.",
+  "author": "codeccoop",
   "license": "GPL-3.0-or-later",
   "main": "build/index.js",
   "scripts": {
-    "build": "wp-scripts build",
-    "start": "wp-scripts start"
+    "start": "npm run dev",
+    "dev": "node esbuild/dev.cjs",
+    "build": "node esbuild/build.cjs"
   }
 }

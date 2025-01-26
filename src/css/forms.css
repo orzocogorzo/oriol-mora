@@ -8,14 +8,32 @@
   max-width: 600px;
 }
 
+.wpcf7-form-control-wrap:not(:last-of-type) .wpcf7-form-control {
+  border-bottom-width: 0px;
+}
+
 .wpcf7-form-control {
   width: 100%;
   background-color: transparent;
+  border: 1px solid var(--wp--preset--color--contrast);
 }
 
 .wpcf7-form-control:focus {
   box-shadow: unset;
   border-color: var(--wp--preset--color--contrast);
+}
+
+.wpcf7-form-control.wpcf7-not-valid {
+  border-color: #dc3232;
+  border-bottom-width: 1px;
+}
+
+.wpcf7-form-control-wrap .wpcf7-not-valid-tip {
+  display: none;
+}
+
+textarea.wpcf7-form-control {
+  resize: none;
 }
 
 .wpcf7-form-control.wpcf7-submit {

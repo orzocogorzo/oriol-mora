@@ -1,0 +1,44 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wpct-block-slider-loop {
+  flex-wrap: wrap !important;
+
+  &.slides-to-show-1 {
+    .wpct-block-slider-slide {
+      flex-basis: 100%;
+    }
+  }
+
+  &.slides-to-show-2 {
+    .wpct-block-slider-slide {
+      flex-basis: 50%;
+    }
+  }
+
+  &.slides-to-show-3 {
+    .wpct-block-slider-slide {
+      flex-basis: 33.33%;
+    }
+  }
+
+  &.slides-to-show-4 {
+    .wpct-block-slider-slide {
+      flex-basis: 25%;
+    }
+  }
+
+  &.slides-to-show-5 {
+    .wpct-block-slider-slide {
+      flex-basis: 20%;
+    }
+  }
+
+  .wpct-block-slider-slide {
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+}

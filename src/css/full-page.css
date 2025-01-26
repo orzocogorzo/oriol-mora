@@ -1,0 +1,24 @@
+.page-template-full-page .wp-site-blocks,
+.page-template-full-page .wp-site-blocks > main,
+.page-template-full-page .wp-site-blocks > main .entry-content,
+.page-template-full-page
+  .wp-site-blocks
+  > main
+  .entry-content
+  .wp-block-group.relative {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.page-template-full-page.admin-bar .wp-site-blocks,
+.page-template-full-page.admin-bar .wp-site-blocks > main,
+.page-template-full-page.admin-bar .wp-site-blocks > main .entry-content,
+.page-template-full-page.admin-bar
+  .wp-site-blocks
+  > main
+  .entry-content
+  .wp-block-group.relative {
+  height: calc(100vh - var(--wp-admin--admin-bar--height));
+}

@@ -1,4 +1,14 @@
-.wp-block-page-list .menu-item-home > button,
-.wp-block-page-list .menu-item-home > .wp-block-navigation__submenu-container {
+.wp-block-site-title a,
+.wp-block-site-title a:focus {
+  text-decoration-line: none;
+}
+
+.wp-block-navigation .has-child button,
+.wp-block-navigation .has-child .wp-block-navigation__submenu-container {
   display: none;
+}
+
+.wp-block-navigation-item.current-menu-item {
+  font-weight: bold;
+  color: var(--wp--preset--color--accent);
 }

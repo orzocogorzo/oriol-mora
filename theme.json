@@ -24,12 +24,12 @@
         },
         {
           "name": "Extra Large",
-          "size": "1.75rem",
+          "size": "2.5rem",
           "slug": "x-large"
         },
         {
           "name": "Extra Extra Large",
-          "size": "2.15rem",
+          "size": "3.15rem",
           "slug": "xx-large"
         }
       ]
@@ -106,10 +106,11 @@
   },
   "styles": {
     "spacing": {
+      "blockGap": "0",
       "padding": {
-        "top": "var(--wp--preset--spacing--50)",
+        "top": "5vh",
         "right": "var(--wp--preset--spacing--40)",
-        "bottom": "var(--wp--preset--spacing--50)",
+        "bottom": "5vh",
         "left": "var(--wp--preset--spacing--40)"
       }
     },
@@ -130,6 +131,11 @@
     }
   ],
   "customTemplates": [
+    {
+      "name": "full-page",
+      "title": "Pantalla completa",
+      "postTypes": ["page"]
+    },
     {
       "name": "page-ca",
       "title": "Pàgines",

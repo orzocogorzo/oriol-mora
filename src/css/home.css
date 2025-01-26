@@ -1,0 +1,28 @@
+.home .wpct-block-slider-slide,
+.home .wpct-block-slider .slick-track,
+.home .wpct-block-slider-slide img {
+  height: 100vh;
+}
+
+.home .wpct-block-slider-slide img {
+  object-fit: cover;
+}
+
+.home.admin-bar .wpct-block-slider-slide,
+.hom.wpct-block-slider .slick-track,
+.home.admin-bar .wpct-block-slider-slide img {
+  height: calc(100vh - var(--wp-admin--admin-bar--height));
+}
+
+.home h1.wp-block-heading.has-xx-large-font-size {
+  font-size: 5rem !important;
+  line-height: 1;
+}
+
+.home h1.wp-block-heading.has-xx-large-font-size a {
+  text-decoration: none;
+}
+
+.home h1.wp-block-heading.has-xx-large-font-size a:focus {
+  outline: none;
+}
