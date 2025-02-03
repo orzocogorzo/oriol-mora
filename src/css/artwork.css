@@ -31,6 +31,12 @@
   align-items: center;
 }
 
+@media (max-width: 782px) {
+  .page-id-12 .wp-block-cover .wp-block-cover__inner-container a {
+    display: flex;
+  }
+}
+
 .page-id-12 .wp-block-cover:hover .wp-block-cover__inner-container a {
   display: flex;
 }
