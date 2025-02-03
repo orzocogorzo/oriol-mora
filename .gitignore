@@ -9,4 +9,4 @@ node_modules
 
 # build
 theme.bundle.*
-editor-style.css
+custom-blocks/*/build

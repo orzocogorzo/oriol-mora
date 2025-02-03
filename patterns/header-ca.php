@@ -40,7 +40,7 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"fixed -z-10 w-screen","style":{"background":{"backgroundImage":{"url":"https://oriolmora.local/wp-content/uploads/2025/01/background-1.png","id":167,"source":"file","title":"background"},"backgroundSize":"cover","backgroundPosition":"100% 50%"},"dimensions":{"minHeight":"60vh"}},"layout":{"type":"default"}} -->
+<!-- wp:group {"align":"full","className":"fixed -z-10 w-screen","style":{"background":{"backgroundImage":{"url":"https://oriol-mora.cantonada.casa/wp-content/uploads/2025/02/background-white.png","id":174,"source":"file","title":"background"},"backgroundSize":"cover","backgroundPosition":"100% 50%"},"dimensions":{"minHeight":"60vh"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull fixed -z-10 w-screen" style="min-height:60vh"></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

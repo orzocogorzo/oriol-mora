@@ -1,7 +1,7 @@
 module.exports = {
   plugins: {
-    "postcss-url": { url: "inline" },
     "@tailwindcss/postcss": {},
+    "postcss-url": { url: "inline" },
     "cssnano": { preset: "default" },
   },
 };
