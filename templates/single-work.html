@@ -53,7 +53,23 @@
 
         <!-- wp:column {"width":"30%"} -->
         <div class="wp-block-column" style="flex-basis: 30%">
-          <!-- wp:post-title /-->
+          <!-- wp:wpct-block/custom-fields -->
+          <div class="wp-block-wpct-block-custom-fields">
+            <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"bottom"}} -->
+            <div class="wp-block-group">
+              <!-- wp:post-title {"fontSize":"large"} /-->
+
+              <!-- wp:paragraph -->
+              <p>,&nbsp;{{year}}.</p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:paragraph -->
+            <p>{{size}}.</p>
+            <!-- /wp:paragraph -->
+          </div>
+          <!-- /wp:wpct-block/custom-fields -->
         </div>
         <!-- /wp:column -->
       </div>

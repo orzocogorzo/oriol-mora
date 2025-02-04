@@ -25,4 +25,18 @@ add_action('init', function () {
         'rewrite' => ['work' => 'obres'],
         'taxonomies' => ['category'],
     ]);
+
+    register_post_meta('work', 'year', [
+        'show_in_rest' => true,
+        'single' => true,
+        'type' => 'integer',
+        'sanitize_callback' => fn($val) => intval($val),
+    ]);
+
+    register_post_meta('work', 'size', [
+        'show_in_rest' => true,
+        'single' => true,
+        'type' => 'string',
+        'sanitize_callback' => 'sanitize_text_field',
+    ]);
 });

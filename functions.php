@@ -11,6 +11,7 @@
 
 require_once 'custom-blocks/slider/slider.php';
 require_once 'custom-blocks/slider-loop/slider-loop.php';
+require_once 'custom-blocks/custom-fields/custom-fields.php';
 
 require_once 'includes/models.php';
 
