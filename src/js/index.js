@@ -1,4 +1,8 @@
+import { bindMouseWheel } from "./slider";
+
 document.addEventListener("DOMContentLoaded", function () {
+  bindMouseWheel();
+
   if (!document.body.classList.contains("single-work")) {
     return;
   }
