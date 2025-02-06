@@ -77,7 +77,7 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_script(
         $theme->get_stylesheet(),
         $theme->get_stylesheet_directory_uri() . '/assets/js/theme.bundle.js',
-        [],
+        ['jquery'],
         $theme->get('Version')
     );
 

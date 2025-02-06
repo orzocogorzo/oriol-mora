@@ -32,6 +32,45 @@
           "size": "3.15rem",
           "slug": "xx-large"
         }
+      ],
+      "fontFamilies": [
+        {
+          "name": "Averta",
+          "slug": "manrope",
+          "fontFamily": "Averta, sans-serif",
+          "fontFace": [
+            {
+              "src": ["file:./assets/fonts/Averta-Regular.otf"],
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "fontFamily": "Averta"
+            },
+            {
+              "src": ["file:./assets/fonts/Averta-Light.otf"],
+              "fontWeight": "200",
+              "fontStyle": "normal",
+              "fontFamily": "Averta"
+            },
+            {
+              "src": ["file:./assets/fonts/Averta-Bold.otf"],
+              "fontWeight": "800",
+              "fontStyle": "normal",
+              "fontFamily": "Averta"
+            },
+            {
+              "src": ["file:./assets/fonts/Averta-RegularItalic.otf"],
+              "fontWeight": "400",
+              "fontStyle": "italic",
+              "fontFamily": "Averta"
+            },
+            {
+              "src": ["file:./assets/fonts/Averta-LightItalic.otf"],
+              "fontWeight": "200",
+              "fontStyle": "italic",
+              "fontFamily": "Averta"
+            }
+          ]
+        }
       ]
     },
     "color": {
