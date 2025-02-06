@@ -3,7 +3,7 @@ export function bindMouseWheel() {
   $(".wpct-block-slider").on("init", function () {
     const slick = $(".wpct-block-slider-wrapper");
     this.addEventListener(
-      "mousewheel",
+      "wheel",
       throttle(function (ev) {
         if (ev.deltaY > 0) {
           slick.slick("slickNext");
