@@ -2,16 +2,22 @@ export function bindMouseWheel() {
   const $ = window.jQuery;
   $(".wpct-block-slider").on("init", function () {
     const slick = $(".wpct-block-slider-wrapper");
-    this.addEventListener(
-      "wheel",
-      throttle(function (ev) {
-        if (ev.deltaY > 0) {
-          slick.slick("slickNext");
-        } else {
-          slick.slick("slickPrev");
-        }
-      }, 500)
-    );
+    const onWheel = throttle((delta) => {
+      if (delta > 0) {
+        slick.slick("slickNext");
+      } else {
+        slick.slick("slickPrev");
+      }
+    }, 500);
+
+    this.addEventListener("wheel", function (ev) {
+      ev.preventDefault();
+      ev.stopPropagation();
+      ev.stopImmediatePropagation();
+      const { deltaY, deltaX } = ev;
+      const delta = Math.abs(deltaY) > Math.abs(deltaX) ? deltaY : deltaX;
+      onWheel(delta);
+    });
   });
 }
 
