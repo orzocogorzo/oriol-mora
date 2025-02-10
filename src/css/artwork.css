@@ -38,9 +38,10 @@
 
   .page-id-12 .wp-block-cover .wp-block-cover__inner-container a {
     display: flex;
+    text-decoration: none;
   }
 }
 
-.page-id-12 .wp-block-cover:hover .wp-block-cover__inner-container a {
+.page-id-12 .wp-block-cover::hover .wp-block-cover__inner-container a {
   display: flex;
 }
