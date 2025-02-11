@@ -7,7 +7,7 @@
   transition: opacity 200ms ease;
 }
 
-.page-id-12 .wp-block-cover::hover .wp-block-cover__background {
+.page-id-12 .wp-block-cover:hover .wp-block-cover__background {
   opacity: 0.5;
 }
 
@@ -42,6 +42,6 @@
   }
 }
 
-.page-id-12 .wp-block-cover::hover .wp-block-cover__inner-container a {
+.page-id-12 .wp-block-cover:hover .wp-block-cover__inner-container a {
   display: flex;
 }
