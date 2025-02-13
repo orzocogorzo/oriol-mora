@@ -128,6 +128,8 @@ const md = +styles.getPropertyValue("--breakpoint-md").replace(/px/, "");
   }
 
   function getAttributes(el) {
+    const query = new URLSearchParams(location.search);
+
     return {
       adaptiveHeight: el.dataset.adaptiveheight === "true",
       arrows: el.dataset.arrows === "true",
@@ -142,7 +144,9 @@ const md = +styles.getPropertyValue("--breakpoint-md").replace(/px/, "");
       dots: el.dataset.dots === "true",
       fade: el.dataset.fade === "true",
       infinite: el.dataset.infinite === "true",
-      initialSlide: Number(el.dataset.initialslide),
+      initialSlide: query.has("slide")
+        ? +query.get("slide")
+        : Number(el.dataset.initialslide),
       rtl: el.dataset.rtl === "true",
       slidesToScroll:
         window.innerWidth > md ? Number(el.dataset.slidestoscroll) : 1,

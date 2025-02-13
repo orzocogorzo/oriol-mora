@@ -18,6 +18,10 @@ export function bindMouseWheel() {
       const delta = Math.abs(deltaY) > Math.abs(deltaX) ? deltaY : deltaX;
       onWheel(delta);
     });
+
+    slick.on("afterChange", (ev, slick, position) => {
+      history.replaceState({}, null, "?slide=" + position);
+    });
   });
 }
 
