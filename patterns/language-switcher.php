@@ -8,14 +8,10 @@
  * @since 1.0.0
  */
 
-if (function_exists('get_current_screen')) {
-    $page = get_current_screen();
-    $is_block_editor = $page->is_block_editor();
-} else {
-    $is_block_editor = false;
-}
+$from = $_SERVER['HTTP_REFERER'] ?? '';
+$is_admin = preg_match('/(wp-json|wp-admin|wp-ajax)/', $from);
 
-if (!$is_block_editor) {
+if (!$is_admin) {
     echo do_shortcode('[oriol_mora_language_switcher]');
 } else {
      ?>
