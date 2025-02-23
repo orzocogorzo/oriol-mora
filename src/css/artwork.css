@@ -1,16 +1,24 @@
+.page-id-236 .wp-block-cover,
+.page-id-254 .wp-block-cover,
 .page-id-12 .wp-block-cover {
   cursor: pointer;
 }
 
+.page-id-236 .wp-block-cover .wp-block-cover__background,
+.page-id-254 .wp-block-cover .wp-block-cover__background,
 .page-id-12 .wp-block-cover .wp-block-cover__background {
   opacity: 0;
   transition: opacity 200ms ease;
 }
 
+.page-id-236 .wp-block-cover:hover .wp-block-cover__background,
+.page-id-254 .wp-block-cover:hover .wp-block-cover__background,
 .page-id-12 .wp-block-cover:hover .wp-block-cover__background {
   opacity: 0.5;
 }
 
+.page-id-236 .wp-block-cover .wp-block-cover__inner-container,
+.page-id-254 .wp-block-cover .wp-block-cover__inner-container,
 .page-id-12 .wp-block-cover .wp-block-cover__inner-container {
   position: absolute;
   z-index: 1;
@@ -19,11 +27,15 @@
   height: 100%;
 }
 
+.page-id-236 .wp-block-cover .wp-block-cover__inner-container > p,
+.page-id-254 .wp-block-cover .wp-block-cover__inner-container > p,
 .page-id-12 .wp-block-cover .wp-block-cover__inner-container > p {
   height: 100%;
   display: flex;
 }
 
+.page-id-236 .wp-block-cover .wp-block-cover__inner-container a,
+.page-id-254 .wp-block-cover .wp-block-cover__inner-container a,
 .page-id-12 .wp-block-cover .wp-block-cover__inner-container a {
   flex: 1;
   display: none;
@@ -32,16 +44,22 @@
 }
 
 @media (max-width: 782px) {
+  .page-id-236 .wp-block-cover .wp-block-cover__background,
+  .page-id-254 .wp-block-cover .wp-block-cover__background,
   .page-id-12 .wp-block-cover .wp-block-cover__background {
     opacity: 0.4;
   }
 
+  .page-id-236 .wp-block-cover .wp-block-cover__inner-container a,
+  .page-id-254 .wp-block-cover .wp-block-cover__inner-container a,
   .page-id-12 .wp-block-cover .wp-block-cover__inner-container a {
     display: flex;
     text-decoration: none;
   }
 }
 
+.page-id-236 .wp-block-cover:hover .wp-block-cover__inner-container a,
+.page-id-254 .wp-block-cover:hover .wp-block-cover__inner-container a,
 .page-id-12 .wp-block-cover:hover .wp-block-cover__inner-container a {
   display: flex;
 }
