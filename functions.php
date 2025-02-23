@@ -118,6 +118,8 @@ add_filter('pings_open', '__return_false', 20, 2);
 add_filter('should_load_remote_block_patterns', '__return_false', 90);
 
 add_action('admin_init', function () {
+    remove_menu_page('edit-comments.php');
+
     add_settings_section(
         'oriol-mora-smtp',
         __('SMTP email sending', 'oriol-mora'),

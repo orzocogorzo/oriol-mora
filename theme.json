@@ -155,6 +155,29 @@
     },
     "typography": {
       "fontSize": "var:preset|font-size|medium"
+    },
+    "blocks": {
+      "core/post-title": {
+        "spacing": {
+          "margin": {
+            "bottom": "var(--wp--preset--spacing--40)"
+          }
+        }
+      },
+      "core/heading": {
+        "spacing": {
+          "margin": {
+            "top": "var(--wp--preset--spacing--30)"
+          }
+        }
+      },
+      "core/paragraph": {
+        "spacing": {
+          "margin": {
+            "bottom": "var(--wp--preset--spacing--20)"
+          }
+        }
+      }
     }
   },
   "templateParts": [
