@@ -1,0 +1,66 @@
+<!-- wp:group {"className":"!mt-7 lg:mt-0","align":"full","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left","verticalAlignment":"top"}} -->
+<div class="wp-block-group !mt-7 lg:mt-0 alignfull">
+  <!-- wp:template-part {"slug":"header-en","theme":"oriol-mora"} /-->
+
+  <!-- wp:group {"className":"!hidden lg:!block","style":{"spacing":{"padding":{"right":"0","left":"var:preset|spacing|80"},"blockGap":"0"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+  <div
+    class="wp-block-group !hidden lg:!block"
+    style="padding-right: 0; padding-left: var(--wp--preset--spacing--80)"
+  >
+    <!-- wp:group {"style":{"spacing":{"padding":{"left":"210px","right":"0"},"blockGap":"0"}},"layout":{"type":"default"}} -->
+    <div
+      class="wp-block-group"
+      style="padding-right: 0; padding-left: 210px"
+    ></div>
+    <!-- /wp:group -->
+  </div>
+  <!-- /wp:group -->
+
+  <!-- wp:group {"tagName":"main","style":{"spacing":{"blockGap":"0","margin":{"top":"0","bottom":"0"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"}},"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained"}} -->
+  <main
+    class="wp-block-group"
+    style="
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+      padding-left: 0;
+    "
+  >
+    <!-- wp:spacer -->
+    <div style="height: 100px" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer -->
+
+    <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50","bottom":"var:preset|spacing|80"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+    <div
+      class="wp-block-group alignfull"
+      style="
+        padding-right: var(--wp--preset--spacing--50);
+        padding-bottom: var(--wp--preset--spacing--80);
+        padding-left: var(--wp--preset--spacing--50);
+      "
+    >
+      <!-- wp:columns {"align":"wide"} -->
+      <div class="wp-block-columns alignwide">
+        <!-- wp:column {"width":"70%"} -->
+        <div class="wp-block-column" style="flex-basis: 70%">
+          <!-- wp:group {"layout":{"type":"constrained"}} -->
+          <div class="wp-block-group"><!-- wp:post-featured-image /--></div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:column -->
+
+        <!-- wp:column {"width":"30%"} -->
+        <div class="wp-block-column" style="flex-basis: 30%">
+          <!-- wp:post-title /-->
+        </div>
+        <!-- /wp:column -->
+      </div>
+      <!-- /wp:columns -->
+    </div>
+    <!-- /wp:group -->
+  </main>
+  <!-- /wp:group -->
+</div>
+<!-- /wp:group -->

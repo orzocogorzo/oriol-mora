@@ -161,12 +161,17 @@
     {
       "area": "header",
       "name": "header-ca",
-      "title": "Capçalera"
+      "title": "Capçalera (CA)"
     },
     {
       "area": "header",
       "name": "header-es",
-      "title": "Cabecera"
+      "title": "Capçalera (ES)"
+    },
+    {
+      "area": "header",
+      "name": "header-en",
+      "title": "Capçalera (EN)"
     }
   ],
   "customTemplates": [
@@ -177,17 +182,22 @@
     },
     {
       "name": "page-ca",
-      "title": "Pàgines",
+      "title": "Pàgines (CA)",
       "postTypes": ["page"]
     },
     {
       "name": "page-es",
-      "title": "Páginas",
+      "title": "Pàgines (ES)",
+      "postTypes": ["page"]
+    },
+    {
+      "name": "page-en",
+      "title": "Pàgines (EN)",
       "postTypes": ["page"]
     },
     {
       "name": "single-work",
-      "title": "Obras",
+      "title": "Obres",
       "postTypes": ["work"]
     }
   ]
