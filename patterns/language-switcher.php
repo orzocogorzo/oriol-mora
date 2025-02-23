@@ -25,9 +25,11 @@ if (!$is_block_editor) {
 	<!-- wp:list-item -->
 	<li>ca</li>
 	<!-- /wp:list-item -->
+
 	<!-- wp:list-item -->
 	<li>es</li>
 	<!-- /wp:list-item -->
+
 	<!-- wp:list-item -->
 	<li>en</li>
 	<!-- /wp:list-item -->
