@@ -12,3 +12,45 @@
   font-weight: bold;
   color: var(--wp--preset--color--accent);
 }
+
+.oriol-mora-language-switcher {
+  margin-top: -5px !important;
+  margin-right: 5px !important;
+  display: flex;
+}
+
+@media (min-width: 782px) {
+  .oriol-mora-language-switcher {
+    margin-top: 2rem !important;
+    margin-right: 0px !important;
+  }
+}
+
+.oriol-mora-language-switcher li {
+  list-style: none;
+  border-right: 1px solid;
+  padding: 0 0.5em;
+  height: 1em;
+  line-height: 1em;
+}
+
+.oriol-mora-language-switcher li:first-child {
+  padding-left: 0px;
+}
+
+.oriol-mora-language-switcher li:last-child {
+  border-right: 0px;
+}
+
+.oriol-mora-language-switcher li a {
+  text-decoration: none;
+}
+
+.oriol-mora-language-switcher li.current-lang {
+  font-weight: bold;
+  color: var(--wp--preset--color--accent);
+}
+
+.oriol-mora-language-switcher li a:hover {
+  text-decoration: underline;
+}

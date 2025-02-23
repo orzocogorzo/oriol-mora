@@ -199,6 +199,21 @@
       "name": "single-work",
       "title": "Obres",
       "postTypes": ["work"]
+    },
+    {
+      "name": "single-ca",
+      "title": "Entrades (CA)",
+      "postTypes": ["post"]
+    },
+    {
+      "name": "single-es",
+      "title": "Entrades (ES)",
+      "postTypes": ["post"]
+    },
+    {
+      "name": "single-en",
+      "title": "Entrades (EN)",
+      "postTypes": ["post"]
     }
   ]
 }

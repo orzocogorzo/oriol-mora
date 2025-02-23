@@ -14,8 +14,9 @@
 
 .wpcf7-form-control {
   width: 100%;
-  background-color: transparent;
+  background-color: white;
   border: 1px solid var(--wp--preset--color--contrast);
+  font: var(--wp--preset--font-family--primary);
 }
 
 .wpcf7-form-control:focus {
@@ -44,6 +45,16 @@ textarea.wpcf7-form-control {
   transition:
     color 200ms ease,
     background-color 200ms ease;
+  color: var(--wp--preset--color--base);
+  background-color: var(--wp--preset--color--contrast);
+  margin-top: 1rem;
+}
+
+@media (max-width: 782px) {
+  .wpcf7-form-control.wpcf7-submit {
+    background-color: var(--wp--preset--color--accent);
+    color: var(--wp--preset--color--base);
+  }
 }
 
 .wpcf7-form-control.wpcf7-submit:hover {
