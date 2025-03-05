@@ -167,7 +167,8 @@
       "core/heading": {
         "spacing": {
           "margin": {
-            "top": "var(--wp--preset--spacing--30)"
+            "top": "var(--wp--preset--spacing--30)",
+            "bottom": "var(--wp--preset--spacing--20)"
           }
         }
       },

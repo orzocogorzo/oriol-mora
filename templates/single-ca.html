@@ -1,5 +1,5 @@
-<!-- wp:group {"className":"!mt-7 lg:mt-0","align":"full","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left","verticalAlignment":"top"}} -->
-<div class="wp-block-group !mt-7 lg:mt-0 alignfull">
+<!-- wp:group {"align":"full","className":"!mt-7 lg:mt-0","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left","verticalAlignment":"top"}} -->
+<div class="wp-block-group alignfull !mt-7 lg:mt-0">
   <!-- wp:template-part {"slug":"header-ca","theme":"oriol-mora"} /-->
 
   <!-- wp:group {"className":"!hidden lg:!block","style":{"spacing":{"padding":{"right":"0","left":"var:preset|spacing|80"},"blockGap":"0"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
@@ -42,8 +42,19 @@
       "
     >
       <!-- wp:post-title {"level":1} /-->
-      <!-- wp:post-featured-image {"aspectRatio":"3/2"} /-->
+
+      <!-- wp:post-featured-image {"aspectRatio":"auto"} /-->
+
+      <!-- wp:spacer {"height":"1rem"} -->
+      <div
+        style="height: 1rem"
+        aria-hidden="true"
+        class="wp-block-spacer"
+      ></div>
+      <!-- /wp:spacer -->
+
       <!-- wp:post-content {"align":"full","layout":{"type":"constrained"}} /-->
+
       <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
       <div
         class="wp-block-group"
@@ -59,6 +70,7 @@
       <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
       <div class="wp-block-group">
         <!-- wp:post-navigation-link {"type":"previous"} /-->
+
         <!-- wp:post-navigation-link /-->
       </div>
       <!-- /wp:group -->
