@@ -8,7 +8,7 @@
  * @since 1.0.0
  */
 
-$from = $_SERVER['HTTP_REFERER'] ?? '';
+$from = $_SERVER['REQUEST_URI'] ?? '';
 $is_admin = preg_match('/(wp-json|wp-admin|wp-ajax)/', $from);
 
 if (!$is_admin) {
