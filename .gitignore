@@ -7,6 +7,10 @@ node_modules
 .wp-env.json
 .php-cs-fixer.cache
 
+# loco
+*.po~
+*.pot~
+
 # build
 theme.bundle.*
 custom-blocks/*/build
