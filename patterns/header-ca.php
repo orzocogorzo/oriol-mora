@@ -40,7 +40,7 @@
             padding-bottom: var(--wp--preset--spacing--20);
           "
         >
-          <!-- wp:site-logo {"width":120,"shouldSyncIcon":true,"style":{"layout":{"selfStretch":"fit","flexSize":null}}} /-->
+          <!-- wp:site-logo {"width":95,"shouldSyncIcon":true,"style":{"layout":{"selfStretch":"fit","flexSize":null}}} /-->
         </div>
         <!-- /wp:group -->
 
