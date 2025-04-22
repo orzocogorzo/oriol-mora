@@ -12,6 +12,7 @@
 require_once 'custom-blocks/slider/slider.php';
 require_once 'custom-blocks/slider-loop/slider-loop.php';
 require_once 'custom-blocks/custom-fields/custom-fields.php';
+require_once 'custom-blocks/language-switcher/language-switcher.php';
 
 require_once 'includes/models.php';
 
@@ -258,12 +259,3 @@ add_action(
 );
 
 add_filter('wpcf7_autop_or_not', '__return_false');
-
-add_shortcode('oriol_mora_language_switcher', function ($atts) {
-    return '<ul class="oriol-mora-language-switcher">' .
-        pll_the_languages([
-            'display_names_as' => 'slug',
-            'echo' => false,
-        ]) .
-        '</ul>';
-});

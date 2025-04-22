@@ -19,13 +19,6 @@
   display: flex;
 }
 
-@media (min-width: 782px) {
-  .oriol-mora-language-switcher {
-    margin-top: 2rem !important;
-    margin-right: 0px !important;
-  }
-}
-
 .oriol-mora-language-switcher li {
   list-style: none;
   border-right: 1px solid;

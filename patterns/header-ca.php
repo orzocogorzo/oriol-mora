@@ -9,6 +9,7 @@
  * @since 1.0.0
  */
 ?>
+
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"0","bottom":"0"},"margin":{"top":"0","bottom":"0"},"blockGap":"0"},"dimensions":{"minHeight":""}},"layout":{"type":"default"}} -->
 <div
   class="wp-block-group alignfull"
@@ -40,23 +41,42 @@
             padding-bottom: var(--wp--preset--spacing--20);
           "
         >
-          <!-- wp:site-logo {"width":95,"shouldSyncIcon":true,"style":{"layout":{"selfStretch":"fit","flexSize":null}}} /-->
+          <!-- wp:site-logo {"width":95,"shouldSyncIcon":false,"style":{"layout":{"selfStretch":"fit","flexSize":null}}} /-->
         </div>
         <!-- /wp:group -->
 
         <!-- wp:site-title {"level":0,"className":"!px-12","style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"backgroundColor":"accent","textColor":"base","fontSize":"large"} /-->
 
-        <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10","padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40","top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
+        <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10","padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40","top":"var:preset|spacing|30","bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
         <div
           class="wp-block-group"
           style="
-            padding-top: var(--wp--preset--spacing--20);
+            padding-top: var(--wp--preset--spacing--30);
             padding-right: var(--wp--preset--spacing--40);
             padding-bottom: var(--wp--preset--spacing--20);
             padding-left: var(--wp--preset--spacing--40);
           "
         >
-          <!-- wp:navigation {"ref":4,"overlayBackgroundColor":"base","overlayTextColor":"contrast","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","justifyContent":"left","flexWrap":"wrap","orientation":"vertical"}} /--><!-- wp:pattern {"slug":"oriol-mora/language-switcher"} /-->
+          <!-- wp:navigation {"ref":4,"overlayBackgroundColor":"base","overlayTextColor":"contrast","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","justifyContent":"left","flexWrap":"wrap","orientation":"vertical"}} /-->
+
+          <!-- wp:social-links {"iconColor":"contrast","iconColorValue":"#111111","className":"is-style-logos-only","style":{"spacing":{"margin":{"top":"var:preset|spacing|20"}}}} -->
+          <ul
+            class="wp-block-social-links has-icon-color is-style-logos-only"
+            style="margin-top: var(--wp--preset--spacing--20)"
+          >
+            <!-- wp:social-link {"url":"https://www.instagram.com/oriol.mora.paintings/","service":"instagram"} /-->
+          </ul>
+          <!-- /wp:social-links -->
+
+          <!-- wp:spacer {"height":"0px","style":{"layout":{"flexSize":"100px","selfStretch":"fixed"}}} -->
+          <div
+            style="height: 0px"
+            aria-hidden="true"
+            class="wp-block-spacer"
+          ></div>
+          <!-- /wp:spacer -->
+
+          <!-- wp:wpct-block/language-switcher {"className":"wp-block-wpct-block-language-switcher"} /-->
         </div>
         <!-- /wp:group -->
       </div>
@@ -66,14 +86,21 @@
   </div>
   <!-- /wp:group -->
 
-  <!-- wp:group {"className":"fixed z-20 lg:hidden top-0 left-0 w-full","style":{"spacing":{"padding":{"right":"0","left":"0","top":"0","bottom":"0"}}},"layout":{"type":"default"}} -->
+  <!-- wp:group {"className":"fixed z-20 lg:hidden top-0 left-0 w-full","style":{"spacing":{"padding":{"right":"0","left":"0","top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}},"border":{"bottom":{"color":"var:preset|color|accent","width":"1px"}}},"backgroundColor":"base","layout":{"type":"default"}} -->
   <div
-    class="wp-block-group fixed z-20 lg:hidden top-0 left-0 w-full"
-    style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0"
+    class="wp-block-group fixed z-20 lg:hidden top-0 left-0 w-full has-base-background-color has-background"
+    style="
+      border-bottom-color: var(--wp--preset--color--accent);
+      border-bottom-width: 1px;
+      padding-top: var(--wp--preset--spacing--20);
+      padding-right: 0;
+      padding-bottom: var(--wp--preset--spacing--20);
+      padding-left: 0;
+    "
   >
-    <!-- wp:group {"align":"full","style":{"position":{"type":""},"dimensions":{"minHeight":""},"spacing":{"padding":{"right":"0","left":"0","top":"0","bottom":"0"},"blockGap":"0"}},"backgroundColor":"base","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+    <!-- wp:group {"align":"full","style":{"position":{"type":""},"dimensions":{"minHeight":""},"spacing":{"padding":{"right":"0","left":"0","top":"0","bottom":"0"},"blockGap":"0"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
     <div
-      class="wp-block-group alignfull has-base-background-color has-background"
+      class="wp-block-group alignfull"
       style="
         padding-top: 0;
         padding-right: 0;
@@ -89,7 +116,17 @@
       ></div>
       <!-- /wp:spacer -->
 
-      <!-- wp:site-title {"level":0,"style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"backgroundColor":"accent","textColor":"base"} /-->
+      <!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+      <div
+        class="wp-block-group"
+        style="
+          padding-right: var(--wp--preset--spacing--50);
+          padding-left: var(--wp--preset--spacing--50);
+        "
+      >
+        <!-- wp:site-logo {"width":60,"shouldSyncIcon":false,"style":{"layout":{"selfStretch":"fit","flexSize":null}}} /-->
+      </div>
+      <!-- /wp:group -->
 
       <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10","padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
       <div
@@ -99,7 +136,9 @@
           padding-left: var(--wp--preset--spacing--40);
         "
       >
-        <!-- wp:pattern {"slug":"oriol-mora/language-switcher"} /--><!-- wp:navigation {"ref":4,"overlayMenu":"always","icon":"menu","overlayBackgroundColor":"base","overlayTextColor":"contrast","layout":{"type":"flex","justifyContent":"right","flexWrap":"wrap","orientation":"vertical"}} /-->
+        <!-- wp:wpct-block/language-switcher {"className":"wp-block-wpct-block-language-switcher"} /-->
+
+        <!-- wp:navigation {"ref":4,"overlayMenu":"always","icon":"menu","overlayBackgroundColor":"base","overlayTextColor":"contrast","layout":{"type":"flex","justifyContent":"right","flexWrap":"wrap","orientation":"vertical"}} /-->
       </div>
       <!-- /wp:group -->
     </div>
