@@ -71,19 +71,29 @@ add_filter(
         }
 
         $localized_query_result = [];
-        foreach ($query_result as $template) {
-            $template_result = $template;
-            foreach ($localized_templates as $localized_template) {
+
+        for ($i = 0; $i < count($query['slug__in']); $i++) {
+            $query_slug = $query['slug__in'][$i];
+            $found_localized = false;
+
+            foreach ($localized_templates as $template) {
                 [$base_name] = wpct_split_localized_template_name(
-                    $localized_template->slug
+                    $template->slug
                 );
-                if ($base_name === $template->slug) {
-                    $template_result = $localized_template;
-                    break;
+
+                $found_localized = $base_name === $query_slug;
+                if ($found_localized) {
+                    $localized_query_result[] = $template;
                 }
             }
 
-            $localized_query_result[] = $template_result;
+            if (!$found_localized) {
+                foreach ($query_result as $template) {
+                    if ($template->slug === $query_slug) {
+                        $localized_query_result[] = $template;
+                    }
+                }
+            }
         }
 
         return $localized_query_result;
