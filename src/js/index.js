@@ -1,7 +1,7 @@
-import { bindMouseWheel } from "./slider";
+import { carouselInteractivity } from "./slider";
 
 document.addEventListener("DOMContentLoaded", function () {
-  bindMouseWheel();
+  carouselInteractivity();
 
   if (!document.body.classList.contains("single-work")) {
     return;
