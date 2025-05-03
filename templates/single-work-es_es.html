@@ -1,6 +1,6 @@
 <!-- wp:group {"className":"!mt-7 lg:mt-0","align":"full","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left","verticalAlignment":"top"}} -->
 <div class="wp-block-group !mt-7 lg:mt-0 alignfull">
-  <!-- wp:template-part {"slug":"header-es","theme":"oriol-mora"} /-->
+  <!-- wp:template-part {"slug":"header-ca","theme":"oriol-mora"} /-->
 
   <!-- wp:group {"className":"!hidden lg:!block","style":{"spacing":{"padding":{"right":"0","left":"var:preset|spacing|80"},"blockGap":"0"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
   <div
@@ -32,7 +32,7 @@
     <div style="height: 100px" aria-hidden="true" class="wp-block-spacer"></div>
     <!-- /wp:spacer -->
 
-    <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50","bottom":"var:preset|spacing|80"}}},"layout":{"type":"constrained","justifyContent":"center"}} -->
+    <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50","bottom":"var:preset|spacing|80"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
     <div
       class="wp-block-group alignfull"
       style="
@@ -41,38 +41,41 @@
         padding-left: var(--wp--preset--spacing--50);
       "
     >
-      <!-- wp:post-title {"level":1} /-->
+      <!-- wp:columns {"align":"wide"} -->
+      <div class="wp-block-columns alignwide">
+        <!-- wp:column {"width":"90%"} -->
+        <div class="wp-block-column" style="flex-basis: 90%">
+          <!-- wp:group {"layout":{"type":"constrained"}} -->
+          <div class="wp-block-group"><!-- wp:post-featured-image /--></div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:column -->
 
-      <!-- wp:post-featured-image {"aspectRatio":"auto"} /-->
+        <!-- wp:column {"width":"10%"} -->
+        <div class="wp-block-column" style="flex-basis: 10%">
+          <!-- wp:wpct-block/custom-fields -->
+          <div class="wp-block-wpct-block-custom-fields">
+            <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"default"}} -->
+            <div class="wp-block-group">
+              <!-- wp:post-title {"fontSize":"large"} /-->
 
-      <!-- wp:spacer {"height":"1rem"} -->
-      <div
-        style="height: 1rem"
-        aria-hidden="true"
-        class="wp-block-spacer"
-      ></div>
-      <!-- /wp:spacer -->
+              <!-- wp:paragraph -->
+              <p>{{year}}</p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
 
-      <!-- wp:post-content {"align":"full","layout":{"type":"constrained"}} /-->
+            <!-- wp:paragraph -->
+            <p>{{size}}.</p>
+            <!-- /wp:paragraph -->
+          </div>
+          <!-- /wp:wpct-block/custom-fields -->
 
-      <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
-      <div
-        class="wp-block-group"
-        style="
-          padding-top: var(--wp--preset--spacing--60);
-          padding-bottom: var(--wp--preset--spacing--60);
-        "
-      >
-        <!-- wp:post-terms {"term":"post_tag","separator":"  ","className":"is-style-post-terms-1"} /-->
+          <!-- wp:pattern {"slug":"oriol-mora/artwork-breadcrumb"} /-->
+        </div>
+        <!-- /wp:column -->
       </div>
-      <!-- /wp:group -->
-
-      <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
-      <div class="wp-block-group">
-        <!-- wp:post-navigation-link {"type":"previous"} /-->
-        <!-- wp:post-navigation-link /-->
-      </div>
-      <!-- /wp:group -->
+      <!-- /wp:columns -->
     </div>
     <!-- /wp:group -->
   </main>

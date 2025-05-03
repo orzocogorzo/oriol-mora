@@ -15,6 +15,7 @@ require_once 'custom-blocks/custom-fields/custom-fields.php';
 require_once 'custom-blocks/language-switcher/language-switcher.php';
 
 require_once 'includes/models.php';
+require_once 'includes/localized-templates.php';
 
 add_action(
     'after_setup_theme',

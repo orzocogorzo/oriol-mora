@@ -189,12 +189,12 @@
     },
     {
       "area": "header",
-      "name": "header-es",
+      "name": "header-es_es",
       "title": "Capçalera (ES)"
     },
     {
       "area": "header",
-      "name": "header-en",
+      "name": "header-en_us",
       "title": "Capçalera (EN)"
     }
   ],
@@ -210,33 +210,43 @@
       "postTypes": ["page"]
     },
     {
-      "name": "page-es",
+      "name": "page-es_es",
       "title": "Pàgines (ES)",
       "postTypes": ["page"]
     },
     {
-      "name": "page-en",
+      "name": "page-en_us",
       "title": "Pàgines (EN)",
       "postTypes": ["page"]
     },
     {
-      "name": "single-work",
-      "title": "Obres",
+      "name": "single-work-ca",
+      "title": "Obra (CA)",
+      "postTypes": ["work"]
+    },
+    {
+      "name": "single-work-es_es",
+      "title": "Obra (ES)",
+      "postTypes": ["work"]
+    },
+    {
+      "name": "single-work-en_us",
+      "title": "Obra (EN)",
       "postTypes": ["work"]
     },
     {
       "name": "single-ca",
-      "title": "Entrades (CA)",
+      "title": "Esdeveniment (CA)",
       "postTypes": ["post"]
     },
     {
-      "name": "single-es",
-      "title": "Entrades (ES)",
+      "name": "single-es_es",
+      "title": "Esdeveniment (ES)",
       "postTypes": ["post"]
     },
     {
-      "name": "single-en",
-      "title": "Entrades (EN)",
+      "name": "single-en_us",
+      "title": "Esdeveniment (EN)",
       "postTypes": ["post"]
     }
   ]
